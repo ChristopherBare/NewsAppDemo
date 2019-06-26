@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.TextView;
 
+import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,7 +22,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import javax.xml.transform.Source;
 
 public class MainActivity extends AppCompatActivity {
     private TextView mTextMessage;
@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
             if (sources.size() == 0) sources.addAll(result);
-
 
             adapter = new SourceAdapter(getApplicationContext(), R.layout.source_item, result);
             sourceList = findViewById(R.id.recyclerView);

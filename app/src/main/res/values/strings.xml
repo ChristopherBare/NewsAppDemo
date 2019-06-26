@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NewDemoThingNews</string>
+    <string name="authorName" />
+    <string name="releaseDate" />
+    <string name="image" />
+    <string name="newsTitle" />
 </resources>

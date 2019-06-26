@@ -1,16 +1,20 @@
 package com.christopherbare.newdemothingnews;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.transform.Source;
 
 class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.MyViewHolder>{
-    private final List<Source> mValues;
+    private List<Source> mValues;
+
+    public SourceAdapter(Context applicationContext, int source_item, ArrayList<Source> result) {
+    }
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
